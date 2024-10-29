@@ -2,8 +2,8 @@
     padding-top: 42px;
     padding-bottom: 31px;
     
-    .container {
-        padding: 16px 12px;
+    .header-container {
+        padding: 14px 10px;
         display: flex;
         justify-content: space-between;
         color: $general-white;
@@ -14,6 +14,7 @@
 
 .header-logo{
     display: flex;
+    user-select: none;
     
     .header-logo-icon {
         display: flex;
@@ -21,7 +22,7 @@
     .header-logo-text {
         align-self: flex-end;
         opacity: 75%;
-        font-size: 28px;
+        font-size: 25px;
         line-height: 1.21;
         font-weight: 800;
         margin-left: 14px;
@@ -43,6 +44,11 @@
             font-size: 18px;
             line-height: 1.2;
             font-weight: 500;
+            opacity: 75%;
+            
+            &:hover {
+                opacity: 100%;
+            }
         }
     }
 }
@@ -55,10 +61,15 @@
         background-color: transparent;
         color: $general-white;
         font-family: $general-font;
+        opacity: 75%;
         font-size: 18px;
         line-height: 1.2;
         font-weight: 500;
         border: none;
+
+        &:hover {
+            opacity: 100%;
+        }
     }
 
     .dropdown-content {
@@ -73,6 +84,11 @@
             color: $general-white;
             font-family: $general-font;
             text-decoration: none;
+            opacity: 75%;
+
+            &:hover {
+                opacity: 100%;
+            }
         }
     }
 
@@ -88,9 +104,17 @@
     display: flex;
     align-items: center;
     gap: 59px;
+    
+    .icons-list-item {
+        opacity: 75%;
+        
+        &:hover {
+            opacity: 100%;
+        }
 
-    a {
-        color: $general-white;
-        fill: currentColor;
+        a {
+            color: $general-white;
+            fill: currentColor;
+        }
     }
 }

@@ -44,8 +44,8 @@ li {
   padding-top: 42px;
   padding-bottom: 31px;
 }
-.header .container {
-  padding: 16px 12px;
+.header .header-container {
+  padding: 14px 10px;
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
@@ -55,6 +55,9 @@ li {
 
 .header-logo {
   display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .header-logo .header-logo-icon {
   display: flex;
@@ -62,7 +65,7 @@ li {
 .header-logo .header-logo-text {
   align-self: flex-end;
   opacity: 75%;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.21;
   font-weight: 800;
   margin-left: 14px;
@@ -83,6 +86,10 @@ li {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
+  opacity: 75%;
+}
+.navigation .navigation-list a:hover {
+  opacity: 100%;
 }
 
 .dropdown {
@@ -93,10 +100,14 @@ li {
   background-color: transparent;
   color: #FFFFFF;
   font-family: "Inter";
+  opacity: 75%;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 500;
   border: none;
+}
+.dropdown .drop-button:hover {
+  opacity: 100%;
 }
 .dropdown .dropdown-content {
   display: none;
@@ -110,6 +121,10 @@ li {
   color: #FFFFFF;
   font-family: "Inter";
   text-decoration: none;
+  opacity: 75%;
+}
+.dropdown .dropdown-content a:hover {
+  opacity: 100%;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -123,7 +138,13 @@ li {
   align-items: center;
   gap: 59px;
 }
-.header-icons-list a {
+.header-icons-list .icons-list-item {
+  opacity: 75%;
+}
+.header-icons-list .icons-list-item:hover {
+  opacity: 100%;
+}
+.header-icons-list .icons-list-item a {
   color: #FFFFFF;
   fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
