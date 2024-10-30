@@ -1,6 +1,5 @@
 .header {
-    padding-top: 42px;
-    padding-bottom: 31px;
+    padding: 42px 0 31px 0;
     
     .header-container {
         padding: 14px 10px;
@@ -23,7 +22,7 @@
         align-self: flex-end;
         opacity: 75%;
         font-size: 25px;
-        line-height: 1.21;
+        line-height: 1.2;
         font-weight: 800;
         margin-left: 14px;
     }

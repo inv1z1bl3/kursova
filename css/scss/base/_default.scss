@@ -7,9 +7,7 @@ body {
 }
 
 .container {
-    width: 1458px;
-    padding-left: 35px;
-    padding-right: 35px;
+    width: 1442px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,4 +35,9 @@ li {
     height: 2592px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.is-hidden {
+    position: absolute;
+    visibility: hidden;
 }

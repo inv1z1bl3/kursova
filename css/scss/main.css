@@ -8,9 +8,7 @@ body {
 }
 
 .container {
-  width: 1458px;
-  padding-left: 35px;
-  padding-right: 35px;
+  width: 1442px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,9 +38,13 @@ li {
   background-position: center;
 }
 
+.is-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
 .header {
-  padding-top: 42px;
-  padding-bottom: 31px;
+  padding: 42px 0 31px 0;
 }
 .header .header-container {
   padding: 14px 10px;
@@ -66,7 +68,7 @@ li {
   align-self: flex-end;
   opacity: 75%;
   font-size: 25px;
-  line-height: 1.21;
+  line-height: 1.2;
   font-weight: 800;
   margin-left: 14px;
 }
@@ -147,4 +149,108 @@ li {
 .header-icons-list .icons-list-item a {
   color: #FFFFFF;
   fill: currentColor;
+}
+
+.footer {
+  position: relative;
+  padding: 79px 29px 77px 54px;
+  background-color: #222C1D;
+  /* Footer left side */
+  /* Footer center */
+  /* Footer right side */
+}
+.footer .container {
+  display: flex;
+  gap: 140px;
+}
+.footer .footer-heading-text {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.footer .footer-left-side {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.footer .footer-left-side .footer-logo {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-bottom: 43px;
+}
+.footer .footer-left-side .footer-logo .footer-logo-icon {
+  display: flex;
+}
+.footer .footer-left-side .footer-logo .footer-logo-text {
+  align-self: flex-end;
+  opacity: 75%;
+  font-size: 51px;
+  line-height: 1.21;
+  font-weight: 900;
+  margin-left: 13px;
+}
+.footer .footer-left-side .footer-text {
+  max-width: 520px;
+  font-weight: 500;
+  margin-bottom: 119px;
+}
+.footer .footer-left-side .footer-languages-list {
+  position: absolute;
+  bottom: 88px;
+  display: flex;
+  gap: 61px;
+  font-weight: 800;
+}
+.footer .footer-center {
+  font-size: 21px;
+  line-height: 1.22;
+  font-weight: 500;
+}
+.footer .footer-center .footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.footer .footer-right-side {
+  font-size: 21px;
+  line-height: 1.22;
+  font-weight: 500;
+}
+.footer .footer-right-side .email-update-form {
+  display: flex;
+}
+.footer .footer-right-side .email-update-form .email-update-label {
+  position: relative;
+  max-width: 494px;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 19px 3.5px 19px 25px;
+}
+.footer .footer-right-side .email-update-form .email-update-label .email-update-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-right: 145px;
+  color: #FFFFFF;
+  opacity: 75%;
+}
+.footer .footer-right-side .email-update-form .email-update-label .email-submit-button {
+  position: absolute;
+  right: 3px;
+  top: 3.5px;
+  bottom: 3.5px;
+  padding: 16px 17px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 1.23;
+  font-weight: 700;
+}
+.footer .footer-right-side .footer-rights {
+  position: absolute;
+  bottom: 88px;
 }/*# sourceMappingURL=main.css.map */
