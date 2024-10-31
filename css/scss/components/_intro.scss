@@ -1,0 +1,25 @@
+.intro {
+    padding-left: 50px;
+    padding-right: 39px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .intro-info {
+        .intro-info-heading{
+            font-size: 103px;
+            font-weight: 600;
+            line-height: 1.21;
+            opacity: 75%;
+        }
+
+        .intro-info-text {
+            max-width: 785px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.22;
+        }
+    }
+}
