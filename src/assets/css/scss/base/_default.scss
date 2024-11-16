@@ -32,9 +32,10 @@ li {
 
 .background-wrapper {
     background-image: url(../../images/backgroundImg.jpg);
-    height: 2592px;
+    height: fit-content;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 143px;
 }
 
 .is-hidden {

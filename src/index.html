@@ -26,7 +26,7 @@
                             <li class="navigation-list-link"><a href="">Home</a></li>
                             <li class="navigation-list-link">
                                 <div class="dropdown">
-                                    <button class="drop-button">Dropdown
+                                    <button class="drop-button">Plants Type
                                         <svg height="7" width="12">
                                             <use href="./images/icons/icon.svg#icon-drop"></use>
                                         </svg>
@@ -78,41 +78,107 @@
                         <p class="intro-info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, illum vel! Dolor natus provident veritatis soluta ea, accusantium quibusdam!</p>
                         <ul class="intro-info-button-list">
                             <li>
-                                <button>Explore</button>
+                                <button class="info-button big">Explore</button>
                             </li>
                             <li>
-                                <img src="" alt="">
-                                <button>Live Demo</button>
+                                <button class="info-button small">    
+                                    <svg width="56" height="56">
+                                        <use href="./images/icons/icon.svg#icon-play"></use>
+                                    </svg>
+                                    Live Demo...
+                                </button>
                             </li>
                         </ul>
                     </div>
 
-                    <figure class="card intro-review">
-                        <img src="" alt="">
-                        <p></p>
-                        <img src="" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
+                    <div class="card intro-review-card">
+                        <div class="review-card-top">
+                            <img src="./images/avatars-images/woman_blue_back.jpg" alt="avatar" class="review-card-avatar avatar-image">
+                            <div class="review-card-avatar-info avatar-info">
+                                <span class="avatar-info-name">Alena Patel</span>
+                                <svg width="91" height="13">
+                                    <use href="./images/icons/icon.svg#icon-stars"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="figcaption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="intro-right-side">
-                    <figure class="card">
-                        <img src="" alt="">
-                        <figcaption>
-                            <span>Trendy House Plant</span>
-                            <h3>Calathea plant</h3>
-                            <button>Buy Now</button>
-                        </figcaption>
-                    </figure>
+                    <div class="card plant-card">
+                        <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
+                        <div class="figcaption">
+                            <div class="left-side">    
+                                <span class="intro-plant-card-span">Trendy House Plant</span>
+                                <h3 class="intro-plant-card-heading">Calathea plant</h3>
+                                <button class="intro-plant-card-button">Buy Now</button>
+                            </div>
+                            <div class="right-side">
+                                <button>
+                                    <svg width="17" height="17">
+                                        <use href=""></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>    
 
         <section class="trendy-section">
             <div class="container">
-                <h2 class="section-heading">Our Trendy plants</h2>
+                <div class="heading">
+                    <svg height="60" width="60" class="heading-left-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
+                    </svg>
+                    
+                    <h2 class="section-heading">Our Trendy plants</h2>
+
+                    <svg height="60" width="60" class="heading-right-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
+                    </svg>
+                </div>
+
+                <div class="trendy-plants">
+                    <div class="card plant-card">
+                        <img src="./images/plants-images/Plant-two.png" alt="Calathea plant" width="529" height="644" class="plant-image-left">
+                        <div class="figcaption-right">    
+                            <h3 class="plant-card-heading">For Small Decs Ai Plat</h3>
+                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p class="plant-card-cost">Rs. 599/-</p>
+                            <div class="button-list">
+                                <button class="plant-card-button">Explore</button>
+                                <button class="plant-card-save-button">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="card plant-card">
+                        <div class="figcaption-left">    
+                            <h3 class="plant-card-heading">For Fresh Decs Ai Plat</h3>
+                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p class="plant-card-cost">Rs. 599/-</p>
+                            <div class="button-list">
+                                <button class="plant-card-button">Explore</button>
+                                <button class="plant-card-save-button">
+                                    <svg width="30" height="30">
+                                        <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <img src="./images/plants-images/Plant-seven.png" alt="Calathea plant" width="644" height="644" class="plant-image-right">
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -120,19 +186,150 @@
     <main class="content">
         <section class="top-selling-section">
             <div class="container">
-                <h2 class="section-heading">Our Top Selling</h2>
+                
+                <div class="heading">
+                    <svg height="60" width="60" class="heading-left-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
+                    </svg>
+                    
+                    <h2 class="section-heading">Our Top Selling</h2>
+
+                    <svg height="60" width="60" class="heading-right-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
+                    </svg>
+                </div>
+
+                <ul class="top-selling-list">
+                    <li>
+                        <div class="card plant-card">
+                            <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
+                            <div class="figcaption">
+                                <div class="left-side">    
+                                    <span class="intro-plant-card-span">Trendy House Plant</span>
+                                    <h3 class="intro-plant-card-heading">Calathea plant</h3>
+                                    <button class="intro-plant-card-button">Buy Now</button>
+                                </div>
+                                <div class="right-side">
+                                    <button>
+                                        <svg width="17" height="17">
+                                            <use href=""></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </section>
 
         <section class="review-section">
             <div class="container">
-                <h2 class="section-heading">Customer Review</h2>
+                <div class="heading">
+                    <svg height="60" width="60" class="heading-left-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
+                    </svg>
+                    
+                    <h2 class="section-heading">Customer Review</h2>
+
+                    <svg height="60" width="60" class="heading-right-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
+                    </svg>
+                </div>
+
+                <ul class="review-cards-list">
+                    <li>
+                        <figure class="card review-card">
+                            <div class="review-card-top">
+                                <img src="./images/avatars-images/man_with_glasses.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
+                                <div class="review-card-avatar-info avatar-info">
+                                    <span class="avatar-info-name">Maxn Raval</span>
+                                    <svg width="91" height="13">
+                                        <use href="./images/icons/icon.svg#icon-stars"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <figcaption class="figcaption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="card review-card">
+                            <div class="review-card-top">
+                                <img src="./images/avatars-images/woman_water_back.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
+                                <div class="review-card-avatar-info avatar-info">
+                                    <span class="avatar-info-name">venely k</span>
+                                    <svg width="115" height="16">
+                                        <use href="./images/icons/icon.svg#icon-stars"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <figcaption class="figcaption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="card review-card">
+                            <div class="review-card-top">
+                                <img src="./images/avatars-images/man_with_hat.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
+                                <div class="review-card-avatar-info avatar-info">
+                                    <span class="avatar-info-name">Lii thakur</span>
+                                    <svg width="91" height="13">
+                                        <use href="./images/icons/icon.svg#icon-stars"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <figcaption class="figcaption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+
             </div>
         </section>
 
         <section class="best-section">
             <div class="container">
-                <h2 class="section-heading">Our Best o2</h2>
+                <div class="heading">
+                    <svg height="60" width="60" class="heading-left-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
+                    </svg>
+                    
+                    <h2 class="section-heading">Our Best o2</h2>
+
+                    <svg height="60" width="60" class="heading-right-icon">
+                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
+                    </svg>
+                </div>
+
+                <div class="card plant-card">
+                    <img src="./images/plants-images/Plant-two.png" alt="Calathea plant" width="529" height="644" class="plant-image-left">
+                    <div class="figcaption-right">    
+                        <h3 class="plant-card-heading">For Small Decs Ai Plat</h3>
+                        <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p class="plant-card-cost">Rs. 599/-</p>
+                        <div class="button-list">
+                            <button class="plant-card-button">Explore</button>
+                            <button class="plant-card-save-button">
+                                <svg width="30" height="30">
+                                    <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -146,12 +343,6 @@
                 </span>
 
                 <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                <ul class="footer-languages-list">
-                    <li class="footer-language">FB</li>
-                    <li class="footer-language">TW</li>
-                    <li class="footer-language">LI</li>
-                </ul>
             </div>
     
             <div class="footer-center">
@@ -175,6 +366,14 @@
                         <button type="submit" class="email-submit-button">Subscribe</button>
                     </label>
                 </form>
+            </div>
+
+            <div class="footer-lower">
+                <ul class="footer-languages-list">
+                    <li class="footer-language">FB</li>
+                    <li class="footer-language">TW</li>
+                    <li class="footer-language">LI</li>
+                </ul>
 
                 <span class="footer-rights">planto © all right reserve</span>
             </div>
