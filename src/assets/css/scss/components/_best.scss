@@ -1,0 +1,101 @@
+.best-section {
+    padding-left: 56px;
+    padding-right: 39px;
+    padding-bottom: 170px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading {
+        margin-bottom: 242px;
+    }
+
+    .plant-card {
+        position: relative;
+        width: 100%;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        padding-right: 91px;
+        display: flex;
+        align-items: center;
+        border-radius: 92px;
+
+        .best-plant-image {
+            position: absolute;
+            user-select: none;
+            left: -70px;
+            bottom: 0;
+        }
+
+        .figcaption {
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+            margin-left: auto;
+        }
+
+        .plant-card-heading {
+            opacity: 75%;
+            font-size: 33px;
+            font-weight: 600;
+            line-height: 1.21;
+            max-width: 600px;
+        }
+
+        .plant-card-description {
+            opacity: 75%;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.21;
+            max-width: 600px;
+        }
+
+        .button-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .plant-card-button {
+            font-family: $general-font;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.21;
+            color: $general-white;
+            background-color: transparent;
+            padding: 13px 52px;
+            border: 2px solid $general-white;
+            border-radius: 12px;
+
+            &:hover,
+            &:focus {
+                opacity: 60%;
+            }
+        }
+
+        .plant-card-pages {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            .intro-plant-text-slider-button {
+                display: flex;
+                align-items: center;
+                opacity: 75%;
+                background-color: transparent;
+                border: none;
+
+                &:first-child {
+                    transform: scaleX(-1);
+                }
+    
+                &:hover,
+                &:focus {
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+
+}

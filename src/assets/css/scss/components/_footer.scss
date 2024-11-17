@@ -59,6 +59,13 @@
             flex-direction: column;
             gap: 26px;
         }
+
+        .footer-link {
+            a {
+                color: $general-white;    
+                text-decoration: none;
+            }
+        }
     }
 
     /* Footer right side */
@@ -111,12 +118,19 @@
     display: flex;
     width: 100%;
     
-    .footer-languages-list {
+    .footer-social-list {
         display: flex;
         gap: 61px;
         font-size: 24px;
         line-height: 1.24;
         font-weight: 800;
+
+        .footer-social-link {
+            a {
+                color: $general-white;
+                text-decoration: none;
+            }
+        }
     }
 
     .footer-rights {

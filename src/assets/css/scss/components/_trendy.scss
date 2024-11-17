@@ -92,31 +92,35 @@
             }
         }
 
-        .plant-image-left {
-            position: absolute;
-            user-select: none;
-            left: 35px;
-            bottom: 15px;
+        &:nth-child(odd) {
+            .plant-image {
+                position: absolute;
+                user-select: none;
+                left: 35px;
+                bottom: 15px;
+            }
+    
+            .figcaption {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin-left: auto;
+            }
         }
 
-        .figcaption-right {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            margin-left: auto;
-        }
-
-        .plant-image-right {
-            position: absolute;
-            user-select: none;
-            right: 35px;
-            bottom: -53px;
-        }
-
-        .figcaption-left {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
+        &:nth-child(even) {
+            .figcaption {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+    
+            .plant-image {
+                position: absolute;
+                user-select: none;
+                right: 35px;
+                bottom: -53px;
+            }
+        } 
     }
 }
