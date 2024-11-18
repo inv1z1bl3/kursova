@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/scss/main.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
 
     <link rel="shortcut icon" href="./images/planto.png" type="image/x-icon">
     <title>Planto</title>
@@ -108,7 +110,7 @@
                 </div>
 
                 <div class="intro-right-side">
-                    <div class="card plant-card">
+                    <!-- <div class="card plant-card">
                         <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
                         <div class="figcaption">
                             <div class="left-side">    
@@ -124,7 +126,52 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                            <div class="swiper-slide card plant-card">
+                                <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
+                                <div class="figcaption">
+                                    <div class="left-side">    
+                                        <p class="intro-plant-card-text">Trendy House Plant</p>
+                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
+                                        <button class="intro-plant-card-button">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card plant-card">
+                                <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
+                                <div class="figcaption">
+                                    <div class="left-side">    
+                                        <p class="intro-plant-card-text">Trendy House Plant</p>
+                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
+                                        <button class="intro-plant-card-button">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card plant-card">
+                                <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
+                                <div class="figcaption">
+                                    <div class="left-side">    
+                                        <p class="intro-plant-card-text">Trendy House Plant</p>
+                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
+                                        <button class="intro-plant-card-button">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
                 </div>
             </div>
         </section>    
@@ -482,5 +529,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
