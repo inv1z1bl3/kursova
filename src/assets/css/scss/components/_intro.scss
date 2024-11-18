@@ -183,6 +183,7 @@
             height: 667px;
             margin-top: -100px;
             padding-top: 100px;
+
             // overflow: visible;
 
             // .swiper-slide {
@@ -213,11 +214,13 @@
             }
 
             .swiper-pagination-bullet {
+                transition: width 0.1s ease-out;
 
                 &-active {
                     background-color: $general-white;
                     border-radius: 46px;
                     width: 21px;
+                    transition: width 0.3s ease-in;
                 }
             }
         }

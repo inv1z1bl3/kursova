@@ -1,18 +1,34 @@
 const swiper = new Swiper('.swiper', {
+    // grabCursor: true,
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
     },
-  
-    // Navigation arrows
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
-    },
-  });
+    }
+});
+
+const swiperText = new Swiper('.swiper-text', {
+
+  pagination: {
+    el: '.swiper-fraction-pagination',
+    type: 'fraction',
+    renderFraction: function (currentClass, totalClass) {
+      return '<span style="font-size:20px">' + "0" + '<span class="' + currentClass + '"></span>/</span>' +
+              '<span style="font-size:15px">0<span class="' + totalClass + '"></span></span>';
+    }
+  },
+  
+  navigation: {
+    nextEl: '.swiper-button-text-next',
+    prevEl: '.swiper-button-text-prev',
+  },
+});
