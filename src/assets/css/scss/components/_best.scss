@@ -96,25 +96,27 @@
         }
     }
 
-    .swiper {
+    .best-section-swiper {
+        position: relative;
         max-width: 1442px;
         margin-top: -100px;
         padding-top: 100px;
         padding-bottom: 133px;
+        overflow: hidden;
 
-        .swiper-pagination {
+    }
+    .swiper-pagination {
 
-            &-bullet {
-                
+        &-bullet {
+            
+            background-color: $general-white;
+            transition: width 0.1s ease-out;
+
+            &-active {
                 background-color: $general-white;
-                transition: width 0.1s ease-out;
-    
-                &-active {
-                    background-color: $general-white;
-                    border-radius: 46px;
-                    width: 21px;
-                    transition: width 0.3s ease-in;
-                }
+                border-radius: 46px;
+                width: 21px;
+                transition: width 0.3s ease-in;
             }
         }
     }

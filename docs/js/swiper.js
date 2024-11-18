@@ -1,6 +1,4 @@
 const swiper = new Swiper('.swiper', {
-    // grabCursor: true,
-  
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -15,6 +13,15 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     }
 });
+
+const swiperBest = new Swiper('.best-section-swiper', {
+  grabCursor: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+})
 
 const swiperText = new Swiper('.swiper-text', {
 
