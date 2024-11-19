@@ -18,7 +18,7 @@ const swiperBest = new Swiper('.best-section-swiper', {
   grabCursor: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.best-section-swiper-pagination',
     type: 'bullets',
   },
 })

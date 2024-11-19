@@ -101,10 +101,16 @@
         max-width: 1442px;
         margin-top: -100px;
         padding-top: 100px;
-        padding-bottom: 133px;
         overflow: hidden;
 
     }
+    
+    .best-section-swiper-pagination {
+        max-width: fit-content;
+        margin-inline: auto;
+        margin-top: 133px;
+    }
+
     .swiper-pagination {
 
         &-bullet {
