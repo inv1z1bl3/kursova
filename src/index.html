@@ -642,9 +642,9 @@
                 <h3 class="footer-heading-text">For Every Update.</h3>
 
                 <form class="email-update-form">
-                    <label class="email-update-label">
+                    <label class="email-update-label" for="reply_to">
                         <span class="is-hidden">Email</span>
-                        <input name="email-update-input" type="email" placeholder="Enter email" class="email-update-input" required>
+                        <input name="reply_to" type="email" placeholder="Enter email" class="email-update-input" required>
                         <button type="submit" class="email-submit-button">Subscribe</button>
                     </label>
                 </form>
@@ -662,7 +662,12 @@
         </div>
     </footer>
 
-    <script src="./js/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('dJyKkms3ahuWUx8Uu')
+      </script>
+    <script src="./js/emailSending.js"></script>
 </body>
 </html>
