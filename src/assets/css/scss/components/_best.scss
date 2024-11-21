@@ -25,14 +25,11 @@
         .best-plant-image {
             position: absolute;
             user-select: none;
-            left: -70px;
+            left: -60px;
             bottom: 0;
         }
 
         .figcaption {
-            display: flex;
-            flex-direction: column;
-            gap: 42px;
             margin-left: auto;
         }
 
@@ -42,6 +39,7 @@
             font-weight: 600;
             line-height: 1.21;
             max-width: 600px;
+            margin-bottom: 42px;
         }
 
         .plant-card-description {
@@ -98,4 +96,129 @@
         }
     }
 
+    .best-section-swiper {
+        position: relative;
+        max-width: 1442px;
+        margin-top: -100px;
+        padding-top: 100px;
+        overflow: hidden;
+
+    }
+    
+    .best-section-swiper-pagination {
+        max-width: fit-content;
+        margin-inline: auto;
+        margin-top: 133px;
+    }
+
+    .swiper-pagination {
+
+        &-bullet {
+            
+            background-color: $general-white;
+            transition: width 0.1s ease-out;
+
+            &-active {
+                background-color: $general-white;
+                border-radius: 46px;
+                width: 21px;
+                transition: width 0.3s ease-in;
+            }
+        }
+    }
+}
+
+.swiper-text {
+    width: 600px;
+    margin-left: auto;
+    overflow: hidden;
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        margin-bottom: 42px;
+    }
+
+    .swiper-button {
+        &-text-next {
+            display: flex;
+            align-items: center;
+            opacity: 75%;
+            background-color: transparent;
+            border: none;
+
+            &:hover,
+            &:focus {
+                opacity: 100%;
+            }
+        }
+
+        &-text-prev {
+            display: flex;
+            align-items: center;
+            opacity: 75%;
+            background-color: transparent;
+            border: none;
+            transform: scaleX(-1);
+
+            &:hover,
+            &:focus {
+                opacity: 100%;
+            }
+        }
+
+        &-disabled {
+            display: none;
+        }
+    }
+
+    .button-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .plant-card-button {
+        font-family: $general-font;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.21;
+        color: $general-white;
+        background-color: transparent;
+        padding: 13px 52px;
+        border: 2px solid $general-white;
+        border-radius: 12px;
+
+        &:hover,
+        &:focus {
+            opacity: 60%;
+        }
+    }
+
+    .plant-card-pages {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .intro-plant-text-slider-button {
+            display: flex;
+            align-items: center;
+            opacity: 75%;
+            background-color: transparent;
+            border: none;
+
+            &:first-child {
+                transform: scaleX(-1);
+            }
+
+            &:hover,
+            &:focus {
+                opacity: 100%;
+            }
+        }
+    }
+
+    .swiper-fraction-pagination {
+        margin-left: auto;
+    }
 }
