@@ -1,10 +1,11 @@
 .trendy-section {
-    padding-left: 56px;
-    padding-right: 39px;
+    // padding-left: 56px;
+    // padding-right: 39px;
 
     .container {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .heading {
@@ -14,14 +15,23 @@
     .plant-card {
         padding: 125px;
         position: relative;
-        width: 100%;
+        width: 99%;
         display: flex;
         align-items: center;
         border-radius: 150px;
         backdrop-filter: blur(40px);
 
+        @include tablet {
+            border-radius: 90px;
+            padding: 60px 10px;
+        }
+
         &:not(:last-child) {
             margin-bottom: 135px;
+
+            @include tablet {
+                margin-bottom: 70px;
+            }
         }
 
 
@@ -42,6 +52,11 @@
             font-weight: 600;
             line-height: 1.21;
             max-width: 644px;
+
+            @include tablet {
+                font-size: 14px;
+                max-width: 370px;
+            }
         }
 
         .plant-card-cost {
@@ -74,6 +89,11 @@
             border-radius: 12px;
             transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
+            @include tablet {
+                font-size: 20px;
+                padding: 8px 30px;
+            }
+
             &:hover,
             &:focus {
                 color: $hover-green;
@@ -89,6 +109,10 @@
             border-radius: 12px;
             transition: stroke 0.3s ease-in-out, border-color 0.3s ease-in-out;
             
+            @include tablet {
+                padding: 6px 8px;
+            }
+            
             &:hover,
             &:focus {
                 stroke: $hover-green;
@@ -102,6 +126,15 @@
                 user-select: none;
                 left: 35px;
                 bottom: 15px;
+                width: 529px;
+                height: 644px;
+
+                @include tablet {
+                    width: 50%;
+                    height: auto;
+                    left: 0;
+                    bottom: 25px;
+                }
             }
     
             .figcaption {
@@ -113,6 +146,22 @@
         }
 
         &:nth-child(even) {
+
+            @include tablet {
+                .plant-card-heading {
+                    text-align: right;
+                }
+                .plant-card-description {
+                    text-align: right;
+                }
+                .plant-card-cost {
+                    text-align: right;
+                }
+                .button-list {
+                    justify-content: right;
+                }
+            }
+
             .figcaption {
                 display: flex;
                 flex-direction: column;
@@ -124,6 +173,13 @@
                 user-select: none;
                 right: 35px;
                 bottom: -53px;
+
+                @include tablet {
+                    width: 60%;
+                    height: auto;
+                    right: -70px;
+                    bottom: 0; 
+                }
             }
         } 
     }

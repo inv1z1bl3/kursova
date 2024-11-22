@@ -1,19 +1,28 @@
 .review-section {
-    padding-left: 55px;
-    padding-right: 55px;
+    // padding-left: 55px;
+    // padding-right: 55px;
     padding-bottom: 285px;
-
-    .container {
+    
+    @include tablet {
+        padding-bottom: 120px;
     }
 
     .heading {
         margin-bottom: 160px;
+
+        @include tablet {
+            margin-bottom: 80px;
+        }
     }
 
     .review-cards-list {
         display: flex;
         gap: 33px;
         justify-content: center;
+
+        @include tablet {
+            flex-wrap: wrap;
+        }
 
         li {
             margin: 0;
@@ -26,6 +35,10 @@
         max-width: fit-content;
         padding: 80px 45px 95px 51px;
         margin: 0;
+
+        @include tablet {
+            padding: 50px 45px 65px 51px;
+        }
 
         .review-card-top {
             display: flex;

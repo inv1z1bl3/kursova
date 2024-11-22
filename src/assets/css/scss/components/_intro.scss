@@ -1,20 +1,41 @@
 .intro {
-    padding-left: 50px;
-    padding-right: 39px;
     padding-bottom: 68px;
+
+    @include tablet {
+        padding-bottom: 30px;
+    }
+
     .container {
         display: flex;
-        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    .intro-left-side {
+        @include tablet {
+            margin-bottom: 100px;
+        }
     }
     
     .intro-info {
         margin-bottom: 216px;
+
+        @include tablet {
+            text-align: center;
+            margin-bottom: 70px;
+        }
 
         .intro-info-heading{
             font-size: 103px;
             font-weight: 600;
             line-height: 1.21;
             opacity: 75%;
+
+            @include tablet {
+                font-size: 60px;
+            }
         }
         .intro-info-text {
             max-width: 785px;
@@ -28,6 +49,10 @@
         .intro-info-button-list {
             display: flex;
             gap: 30px;
+
+            @include tablet {
+                justify-content: center;
+            }
         }
 
         .info-button {
@@ -78,6 +103,12 @@
         padding-bottom: 45px;
         padding-right: 28px;
 
+        @include tablet {
+            justify-self: center;
+            padding-top: 30px;
+            padding-bottom: 35px;
+        }
+
         .review-card-top {
             display: flex;
             margin-bottom: 22px;
@@ -114,6 +145,13 @@
     }
     
     .intro-right-side {
+        margin-left: auto;
+
+        
+        @include tablet {
+            margin-inline: auto;
+        }
+
         .plant-card {
             position: relative;
             border-radius: 77px;
@@ -122,12 +160,23 @@
             backdrop-filter: blur(25px);
             box-shadow: 0px 9px 18.4px 0px #00000040;
 
+            @include tablet {
+                height: 487px;
+                width: 370px;
+            }
+
             .plant-card-image {
                 position: absolute;
                 overflow: visible;
                 top: -115px;
                 left: 22px;
                 z-index: 999;
+
+                @include tablet {
+                    top: -110px;
+                    width: 90%;
+                    height: auto;
+                }
             }
 
             .figcaption {
@@ -175,9 +224,12 @@
 
         .swiper {
             width: 450px;
-            height: 667px;
             margin-top: -100px;
             padding-top: 100px;
+
+            @include tablet {
+                width: 400px;
+            }
 
             .swiper-button {
                 &-next,
