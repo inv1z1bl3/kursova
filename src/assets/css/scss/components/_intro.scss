@@ -38,6 +38,7 @@
             background-color: transparent;
             border: none;
             opacity: 75%;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, opacity 0.4s ease-in-out;
 
             &.big {
                 padding: 13px 52px;
@@ -51,11 +52,19 @@
                 align-items: center;
                 font-size: 17px;
                 gap: 16px;
+
+                svg {
+                    fill: currentColor;
+                    stroke: currentColor;
+                }
             }
 
             &:hover,
             &:focus {
                 opacity: 100%;
+                color: $hover-green;
+                border-color: $hover-green;
+                fill: currentColor;
             }
         }
     }
@@ -152,29 +161,15 @@
                     padding: 13px 44px;
                     border: 2px solid $general-white;
                     border-radius: 12px;
+                    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, opacity 0.4s ease-in-out;
         
                     &:hover,
                     &:focus {
-                        opacity: 100%;
+                        color: $hover-green;
+                        border-color: currentColor;
                     }
                 }
 
-                .right-side {
-                    .intro-plant-cards-slider-button {  
-                        width: 40px;
-                        height: 40px;
-                        opacity: 75%;
-                        margin-top: 40px; 
-                        background-color: transparent;
-                        border: none;
-
-                        &:hover,
-                        &:focus {
-                            opacity: 100%;
-                        }
-                    }
-
-                }
             }
         }
 
@@ -184,23 +179,16 @@
             margin-top: -100px;
             padding-top: 100px;
 
-            // overflow: visible;
-
-            // .swiper-slide {
-            //     &-prev {
-            //         display: none;
-            //     }
-
-            //     &-next {
-            //         display: none;
-            //     }
-            // }
-
             .swiper-button {
                 &-next,
                 &-prev {
                     color: $general-white;
                     margin-top: 140px; 
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $hover-green;
+                    }
                 }
 
                 &-next::after,

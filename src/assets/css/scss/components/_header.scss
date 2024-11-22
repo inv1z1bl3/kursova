@@ -46,9 +46,11 @@
             line-height: 1.2;
             font-weight: 500;
             opacity: 75%;
+            transition: color 0.2s ease-in-out, opacity 0.3s ease-in-out;
             
             &:hover {
                 opacity: 100%;
+                color: $hover-green;
             }
         }
     }
@@ -67,9 +69,11 @@
         line-height: 1.2;
         font-weight: 500;
         border: none;
+        transition: color 0.2s ease-in-out, opacity 0.3s ease-in-out;
 
         &:hover {
             opacity: 100%;
+            color: $hover-green;
         }
     }
 
@@ -86,9 +90,11 @@
             font-family: $general-font;
             text-decoration: none;
             opacity: 75%;
+            transition: color 0.2s ease-in-out, opacity 0.3s ease-in-out;
 
             &:hover {
                 opacity: 100%;
+                color: $hover-green;
             }
         }
     }
@@ -108,12 +114,14 @@
     
     .icons-list-item {
         opacity: 75%;
+        transition: opacity 0.3s ease-in-out;
         
         &:hover {
             opacity: 100%;
         }
 
         a {
+            stroke: $general-white;
             color: $general-white;
             fill: currentColor;
         }

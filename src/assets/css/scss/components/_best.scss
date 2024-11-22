@@ -65,10 +65,13 @@
             padding: 13px 52px;
             border: 2px solid $general-white;
             border-radius: 12px;
+            transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
             &:hover,
             &:focus {
-                opacity: 60%;
+                opacity: 100%;
+                color: $hover-green;
+                border-color: $hover-green;
             }
         }
 
@@ -81,8 +84,10 @@
                 display: flex;
                 align-items: center;
                 opacity: 75%;
+                stroke: $general-white;
                 background-color: transparent;
                 border: none;
+                transition: opacity 0.4s ease-in-out, stroke 0.3s ease-in-out;
 
                 &:first-child {
                     transform: scaleX(-1);
@@ -91,6 +96,7 @@
                 &:hover,
                 &:focus {
                     opacity: 100%;
+                    stroke: $hover-green;
                 }
             }
         }
@@ -130,7 +136,6 @@
 
 .swiper-text {
     width: 600px;
-    margin-left: auto;
     overflow: hidden;
 
     .swiper-slide {
@@ -138,87 +143,5 @@
         flex-direction: column;
         gap: 42px;
         margin-bottom: 42px;
-    }
-
-    .swiper-button {
-        &-text-next {
-            display: flex;
-            align-items: center;
-            opacity: 75%;
-            background-color: transparent;
-            border: none;
-
-            &:hover,
-            &:focus {
-                opacity: 100%;
-            }
-        }
-
-        &-text-prev {
-            display: flex;
-            align-items: center;
-            opacity: 75%;
-            background-color: transparent;
-            border: none;
-            transform: scaleX(-1);
-
-            &:hover,
-            &:focus {
-                opacity: 100%;
-            }
-        }
-
-        &-disabled {
-            display: none;
-        }
-    }
-
-    .button-list {
-        display: flex;
-        align-items: center;
-    }
-
-    .plant-card-button {
-        font-family: $general-font;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 1.21;
-        color: $general-white;
-        background-color: transparent;
-        padding: 13px 52px;
-        border: 2px solid $general-white;
-        border-radius: 12px;
-
-        &:hover,
-        &:focus {
-            opacity: 60%;
-        }
-    }
-
-    .plant-card-pages {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-
-        .intro-plant-text-slider-button {
-            display: flex;
-            align-items: center;
-            opacity: 75%;
-            background-color: transparent;
-            border: none;
-
-            &:first-child {
-                transform: scaleX(-1);
-            }
-
-            &:hover,
-            &:focus {
-                opacity: 100%;
-            }
-        }
-    }
-
-    .swiper-fraction-pagination {
-        margin-left: auto;
-    }
+    }    
 }

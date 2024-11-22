@@ -70,13 +70,16 @@
                     opacity: 75%;
                     margin-left: auto;   
                     padding: 11px 12px;
-                    fill: $general-white;
+                    stroke: $general-white;
                     background-color: transparent;
                     border: 2px solid $general-white;
                     border-radius: 12px;
+                    transition: stroke 0.3s ease-in-out, border-color 0.3s ease-in-out, opacity 0.4s ease-in-out;
                     
                     &:hover,
                     &:focus {
+                        border-color: $hover-green;
+                        stroke: $hover-green;
                         opacity: 100%;
                     }
                 }

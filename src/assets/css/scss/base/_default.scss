@@ -10,6 +10,18 @@ body {
     width: 1442px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mobile {
+        width: $mobile-min;
+    }
+
+    @include tablet {
+        width: $tablet-min;
+    }
+
+    @include desktop {
+        width: $desktop-min;
+    }
 }
 
 button {
