@@ -25,12 +25,22 @@
             border-radius: 90px;
             padding: 60px 10px;
         }
+        
+        @include mobile {
+            flex-direction: column;
+            border-radius: 70px;
+            padding: 120px 10px 60px 10px;
+        }
 
         &:not(:last-child) {
             margin-bottom: 135px;
 
             @include tablet {
                 margin-bottom: 70px;
+            }
+            
+            @include mobile {
+                margin-bottom: 100px;
             }
         }
 
@@ -45,6 +55,10 @@
             0px 8.26px 17.87px rgba(0, 0, 0, 0.3696),
             0px 15.46px 33.42px rgba(0, 0, 0, 0.4457),
             0px 37px 80px rgba(0, 0, 0, 0.62);
+
+            @include mobile {
+                font-size: 24px;
+            }
         }
 
         .plant-card-description {
@@ -56,6 +70,10 @@
             @include tablet {
                 font-size: 14px;
                 max-width: 370px;
+            }
+            
+            @include mobile {
+                font-size: 14px;
             }
         }
 
@@ -69,6 +87,10 @@
             0px 8.26px 17.87px rgba(0, 0, 0, 0.3696),
             0px 15.46px 33.42px rgba(0, 0, 0, 0.4457),
             0px 37px 80px rgba(0, 0, 0, 0.62);
+
+            @include mobile {
+                font-size: 24px;
+            }
         }
 
         .button-list {
@@ -93,6 +115,11 @@
                 font-size: 20px;
                 padding: 8px 30px;
             }
+            
+            @include mobile {
+                font-size: 20px;
+                padding: 8px 30px;
+            }
 
             &:hover,
             &:focus {
@@ -113,6 +140,10 @@
                 padding: 6px 8px;
             }
             
+            @include mobile {
+                padding: 3px 4px;
+            }
+
             &:hover,
             &:focus {
                 stroke: $hover-green;
@@ -135,6 +166,13 @@
                     left: 0;
                     bottom: 25px;
                 }
+                
+                @include mobile {
+                    width: 70%;
+                    height: auto;
+                    left: 50px;
+                    top: -120px;
+                }
             }
     
             .figcaption {
@@ -142,6 +180,10 @@
                 flex-direction: column;
                 gap: 24px;
                 margin-left: auto;
+                
+                @include mobile {
+                    gap: 15px;
+                }
             }
         }
 
@@ -166,6 +208,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                
+                @include mobile {
+                    gap: 15px;
+                }
             }
     
             .plant-image {
@@ -179,6 +225,13 @@
                     height: auto;
                     right: -70px;
                     bottom: 0; 
+                }
+                
+                @include mobile {
+                    width: 70%;
+                    height: auto;
+                    left: 50px;
+                    top: -100px;
                 }
             }
         } 

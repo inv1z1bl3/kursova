@@ -5,10 +5,18 @@
         padding-bottom: 30px;
     }
 
+    @include mobile {
+        padding-bottom: 50px;
+    }
+
     .container {
         display: flex;
 
         @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
             flex-direction: column;
         }
     }
@@ -17,12 +25,21 @@
         @include tablet {
             margin-bottom: 100px;
         }
+        
+        @include mobile {
+            margin-bottom: 120px;
+        }
     }
     
     .intro-info {
         margin-bottom: 216px;
 
         @include tablet {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        @include mobile {
             text-align: center;
             margin-bottom: 70px;
         }
@@ -36,6 +53,11 @@
             @include tablet {
                 font-size: 60px;
             }
+
+            @include mobile {
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
         }
         .intro-info-text {
             max-width: 785px;
@@ -44,6 +66,10 @@
             line-height: 1.22;
             margin-bottom: 20px;
             opacity: 75%;
+
+            @include mobile {
+                font-size: 17px;
+            }
         }
 
         .intro-info-button-list {
@@ -52,6 +78,13 @@
 
             @include tablet {
                 justify-content: center;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
             }
         }
 
@@ -70,6 +103,11 @@
                 font-size: 24px;
                 border: 2px solid $general-white;
                 border-radius: 12px;
+
+                @include mobile {
+                    font-size: 20px;
+                    padding: 8px 32px;
+                }
             }
 
             &.small {
@@ -77,6 +115,16 @@
                 align-items: center;
                 font-size: 17px;
                 gap: 16px;
+
+                @include mobile {
+                    font-size: 14px;
+                    gap: 8px;
+
+                    svg {
+                        width: 33%;
+                        height: auto;
+                    }
+                }
 
                 svg {
                     fill: currentColor;
@@ -107,6 +155,12 @@
             justify-self: center;
             padding-top: 30px;
             padding-bottom: 35px;
+        }
+        
+        @include mobile {
+            justify-self: center;
+            padding-top: 25px;
+            padding-bottom: 30px;
         }
 
         .review-card-top {
@@ -151,6 +205,10 @@
         @include tablet {
             margin-inline: auto;
         }
+        
+        @include mobile {
+            margin-inline: auto;
+        }
 
         .plant-card {
             position: relative;
@@ -165,6 +223,11 @@
                 width: 370px;
             }
 
+            @include mobile {
+                height: 380px;
+                width: 310px;
+            }
+
             .plant-card-image {
                 position: absolute;
                 overflow: visible;
@@ -177,6 +240,13 @@
                     width: 90%;
                     height: auto;
                 }
+                
+                @include mobile {
+                    left: 18px;
+                    top: -120px;
+                    width: 88%;
+                    height: auto;
+                }
             }
 
             .figcaption {
@@ -185,6 +255,11 @@
                 gap: 106px;
                 left: 65px;
                 bottom: 74px;
+
+                @include mobile {
+                    left: 50px;
+                    bottom: 54px;
+                }
 
                 .intro-plant-card-text {
                     opacity: 75%;
@@ -211,6 +286,11 @@
                     border: 2px solid $general-white;
                     border-radius: 12px;
                     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, opacity 0.4s ease-in-out;
+
+                    @include mobile {
+                        padding: 10px 34px;
+                        font-size: 20px;
+                    }
         
                     &:hover,
                     &:focus {
@@ -231,12 +311,24 @@
                 width: 400px;
             }
 
+            @include mobile {
+                width: 310px;
+            }
+
             .swiper-button {
                 &-next,
                 &-prev {
                     color: $general-white;
                     margin-top: 140px; 
                     transition: color 0.3s ease-in-out;
+
+                    @include tablet {
+                        margin-top: 98px;
+                    }
+
+                    @include mobile {
+                        margin-top: 77px;
+                    }
 
                     &:hover {
                         color: $hover-green;
