@@ -1,0 +1,51 @@
+.touch {
+    border-radius: 20px;
+    margin: 70px 60px;
+    padding: 140px 100px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../../images/touchbg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 67px;
+    &_title {
+        max-width: 600px;
+    }
+
+    &_form {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        &-label {
+            position: absolute;
+            font-size: 10px;
+            color: var(--main);
+            letter-spacing: 0.33em;
+            font-weight: bold;
+            text-transform: uppercase;
+            top: 13px;
+            left: 40px;
+        }
+
+        &-input {
+            width: 460px;
+            background: transparent;
+            border: 1px solid var(--text);
+            border-radius: 60px;
+            height: 67px;
+            color: var(--text);
+            font-size: 20px;
+            padding: 23px 38px 5px 38px;
+        }
+
+        &-button {
+            height: 67px !important;
+            justify-content: center;
+            justify-content: center !important;
+        }
+    }
+}

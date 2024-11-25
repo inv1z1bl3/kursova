@@ -1,0 +1,37 @@
+header {
+    position: absolute;
+    height: 160px;
+    width: calc(100% - 120px);
+    max-width: 100%;
+    left: 60px;
+    top: 0;
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+        cursor: pointer;
+    }
+
+    &_burger {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        height: 100%;
+        background-color: var(--main);
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        transition: background 250ms;
+
+        &:hover {
+            background: var(--hover);
+            transition: background 250ms;
+        }
+    }
+}

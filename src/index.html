@@ -1,670 +1,916 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/modern-normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/scss/main.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-
-    <link rel="shortcut icon" href="./images/planto.png" type="image/x-icon">
-    <title>Planto</title>
-</head>
-<body>
-    <div class="background-wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header-container">
-                    <a class="header-logo">
-                        <span class="header-logo-icon"><img src="./images/planto.png" alt="logo" width="42" height="42"></span>
-                        <span class="header-logo-text">Planto.</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet"
+        />
+        <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/sass/styles.min.css" />
+        <link rel="shortcut icon" href="images/svg/logoXL.svg" type="image/x-icon">
+        <title>Lotus Glow - Yoga</title>
+    </head>
+    <body>
+        <main class="main">
+            <header class="header">
+                <div class="header_logo">
+                    <a href="/">
+                        <img src="images/svg/logo.svg" alt="logo" />
                     </a>
-                    
-                    <nav class="navigation">
-                        <ul class="navigation-list">
-                            <li class="navigation-list-link"><a href="">Home</a></li>
-                            <li class="navigation-list-link">
-                                <div class="dropdown">
-                                    <button class="drop-button">Plants Type
-                                        <svg height="7" width="12">
-                                            <use href="./images/icons/icon.svg#icon-drop"></use>
-                                        </svg>
-                                    </button>
-                                    <div class="dropdown-content">
-                                      <a href="#trendy">Trendy plants</a>
-                                      <a href="#top">Top selling plants</a>
-                                      <a href="#oxygen">Best oxygen plants</a>
+                </div>
+                <div class="header_burger" onclick="toggleMenu()">
+                    <img
+                        src="images/svg/burger.svg"
+                        alt="burger-menu"
+                    />
+                </div>
+                <div class="burger_menu" id="burgerMenu">
+                    <div class="burger_menu_close" onclick="toggleMenu()">
+                        <svg
+                            width="51"
+                            height="51"
+                            viewBox="0 0 51 51"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M39.6917 11.3182L10.6748 40.3337M10.6748 11.3182L39.6917 40.3337"
+                                stroke="#C7A78A"
+                                stroke-width="2.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#club">ABOUT THE LOTUS GLOW</a>
+                            <hr />
+                        </li>
+
+                        <li>
+                            <a href="#types">THE LOTUS YOGA TYPES</a>
+                            <hr />
+                        </li>
+
+                        <li>
+                            <a href="#instructors">LOTUS INSTRUCTORS</a>
+                            <hr />
+                        </li>
+
+                        <li><a class="burger_modal_open">BOOK A SESSION</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="main_wrapper">
+                <div class="main_col">
+                    <div class="wide main_col-wide">LOTUS GLOW YOGA CLUB</div>
+                    <h1 class="main_col-title">
+                        FIND YOUR INNER <span class="main_color">LIGHT</span>
+                    </h1>
+                    <div class="simple main_col-subtitle">
+                        Illuminate your path with Lotus Glow – find balance and
+                        serenity through our organic yoga experience.
+                    </div>
+                    <div class="main_button-wrapper">
+                        <button class="book main_col-btn open-modal">
+                            <div>Book a Session</div>
+                            <img
+                                src="images/svg/arrow-right(black).svg"
+                                alt="arrow-right"
+                            />
+                        </button>
+                        <a class="tel-mobile" href="tel:3125557890"
+                            ><img
+                                class="main_button-phone-mobile"
+                                src="images/svg/main-phone-mobile.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="main_col">
+                    <img
+                        class="main_col-img"
+                        src="images//main.png"
+                        alt="main"
+                    />
+                    <a class="main_col-phone" href="tel:3125557890">
+                        <div class="main_col-phone-wrapper">
+                            <img
+                                class="main_col-phone-img"
+                                src="images/svg/phone.svg"
+                                alt="call"
+                            />
+                            <div class="main_col-phone-number">
+                                <span class="bold">GIVE US A CALL:</span>
+                                (312) 555-7890
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <section class="club" id="club" data-aos="zoom-in-up">
+            <h2 class="club_title">
+                THE LOTUS <span class="main_color">CLUB</span>
+            </h2>
+            <div class="club_subtitle">
+                At Lotus Glow, we believe in the power of mindful movement and
+                inner peace. Our organic yoga practices are designed to nurture
+                your body, calm your mind, and elevate your spirit. Join our
+                community to experience a holistic approach to wellness in a
+                serene and supportive environment. Discover your path to balance
+                and tranquility with us.
+            </div>
+            <img
+                class="club_img"
+                src="images//Three.png"
+                alt="blocks"
+            />
+        </section>
+        <section class="types" id="types" data-aos="zoom-in-up">
+            <div class="types_header">
+                <div class="types_header-wrapper">
+                    <h2 class="types_header-title">DISCOVER</h2>
+                    <h2 class="types_header-title">
+                        THE LOTUS <span class="main_color">TYPES</span>
+                    </h2>
+                </div>
+                <hr class="types_hr" />
+            </div>
+            <div class="types_grid">
+                <div class="types_grid-card">
+                    <div class="types_grid-card-title">Kundalini Yoga</div>
+                    <div class="types_grid-card-subtitle">
+                        AWAKEN YOUR INNER ENERGY
+                    </div>
+                    <div class="types_grid-card-description">
+                        Kundalini Yoga focuses on awakening the spiritual energy
+                        within through a combination of postures, breathwork,
+                        meditation, and chanting. This practice aims to elevate
+                        your consciousness, increase self-awareness, and bring a
+                        profound sense of inner peace and vitality.
+                    </div>
+                    <div class="types_grid-card-link">
+                        <img
+                            src="images/svg/arrow-right(brown).svg"
+                            alt=""
+                        />
+                        <a href="">Start Now!</a>
+                    </div>
+                    <div class="mark"></div>
+                </div>
+                <img
+                    class="types_grid-img"
+                    src="images//Types1.jpg"
+                    alt="type1"
+                />
+                <div class="types_grid-card">
+                    <div class="types_grid-card-title">Yin Yoga</div>
+                    <div class="types_grid-card-subtitle">
+                        Deep Relaxation and Flexibility
+                    </div>
+                    <div class="types_grid-card-description">
+                        Yin Yoga involves holding postures for extended periods
+                        to target deep connective tissues and promote
+                        flexibility and relaxation. This meditative practice
+                        encourages the release of tension and fosters a sense of
+                        calm and introspection.
+                    </div>
+                    <div class="types_grid-card-link">
+                        <img
+                            src="images/svg/arrow-right(brown).svg"
+                            alt=""
+                        />
+                        <a href="">Start Now!</a>
+                    </div>
+                    <div class="mark"></div>
+                </div>
+                <div class="types_grid-card">
+                    <div class="types_grid-card-title">Bikram Yoga</div>
+                    <div class="types_grid-card-subtitle">
+                        Detox and Strengthen
+                    </div>
+                    <div class="types_grid-card-description">
+                        Bikram Yoga is practiced in a heated room with a fixed
+                        sequence of 26 postures and 2 breathing exercises. The
+                        heat enhances flexibility, promotes detoxification, and
+                        provides a challenging workout that strengthens and
+                        tones the body.
+                    </div>
+                    <div class="types_grid-card-link">
+                        <img
+                            src="images/svg/arrow-right(brown).svg"
+                            alt=""
+                        />
+                        <a href="">Start Now!</a>
+                    </div>
+                    <div class="mark"></div>
+                </div>
+                <div class="types_grid-card">
+                    <div class="types_grid-card-title">Iyengar Yoga</div>
+                    <div class="types_grid-card-subtitle">
+                        Precision and Alignment
+                    </div>
+                    <div class="types_grid-card-description">
+                        Iyengar Yoga emphasizes precise alignment and the use of
+                        props to help practitioners achieve correct postures.
+                        This method builds strength, flexibility, and stability
+                        while improving overall posture and reducing the risk of
+                        injury.
+                    </div>
+                    <div class="types_grid-card-link">
+                        <img
+                            src="images/svg/arrow-right(brown).svg"
+                            alt=""
+                        />
+                        <a href="">Start Now!</a>
+                    </div>
+                    <div class="mark"></div>
+                </div>
+                <img
+                    class="types_grid-img"
+                    src="images//Types2.jpg"
+                    alt="type2"
+                />
+            </div>
+        </section>
+        <section class="harmony" data-aos="zoom-in-up">
+            <h2 class="harmony_title">
+                THE LOTUS PATH TO YOUR
+                <span class="main_color">INNER HARMONY</span>
+            </h2>
+            <div class="harmony_subtitle">
+                Join +1K Members in the Lotus Club
+            </div>
+            <button class="book harmony_btn open-modal">
+                <div>Book a Session</div>
+                <img
+                    src="images/svg/arrow-right(black).svg"
+                    alt="arrow-right"
+                />
+            </button>
+        </section>
+        <section class="instructors" id="instructors" data-aos="zoom-in-up">
+            <div class="instructors_header">
+                <h2 class="instructors_header-title">
+                    MEET THE LOTUS <span class="main_color">INSTRUCTORS</span>
+                </h2>
+                <hr class="instructors_hr" />
+            </div>
+            <div class="splide" role="group">
+                <div class="splide__track">
+                    <ul class="instructors_list splide__list" style="transform: translateX(-501.6px);">
+                        <li class="instructors_list-item splide__slide">
+                            <div>
+                                <div>
+                                    <img
+                                        class="instructors_list-item-img"
+                                        src="images//instructor1.png"
+                                        alt="instructor1"
+                                    />
+                                    <div class="instructors_list-item-title">Ava Hart</div>
+                                    <div class="instructors_list-item-description">
+                                        Ava Hart is a dedicated instructor specializing in
+                                        Kundalini Yoga. With over 10 years of experience,
+                                        Ava is known for her ability to guide students
+                                        through transformative practices that awaken
+                                        spiritual energy and promote self-awareness. Her
+                                        classes integrate dynamic postures, breathwork, and
+                                        meditation to help students achieve a deeper
+                                        connection with their inner selves.
                                     </div>
                                 </div>
-                            </li>
-                            <li class="navigation-list-link"><a href="">More</a></li>
-                            <li class="navigation-list-link"><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
             
-                    <ul class="header-icons-list">
-                        <li class="icons-list-item">
-                            <a href="">
-                                <svg height="23" width="23">
-                                    <use href="./images/icons/icon.svg#icon-search"></use>
-                                </svg>
-                            </a>
+                                <ul class="instructors_list-item-socials">
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M18.6 16L14.4 13.6V18.4L18.6 16Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.2 10.7C22.9 10.9 23.4 11.4 23.6 12.1C24 13.4 24 16 24 16C24 16 24 18.6 23.7 19.9C23.5 20.6 23 21.1 22.3 21.3C21 21.6 16 21.6 16 21.6C16 21.6 10.9 21.6 9.7 21.3C9 21.1 8.5 20.6 8.3 19.9C8 18.6 8 16 8 16C8 16 8 13.4 8.2 12.1C8.4 11.4 8.90001 10.9 9.60001 10.7C10.9 10.4 15.9 10.4 15.9 10.4C15.9 10.4 21 10.4 22.2 10.7Z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                                                />
+                                                <path fill-rule="evenodd"
+                                                clip-rule="evenodd" d="M0 16C0 7.16344
+                                                7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32
+                                                24.8366 24.8366 32 16 32C7.16344 32 0
+                                                24.8366 0 16ZM12.6 7.7H19.4C20.3 7.8 20.9
+                                                7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4
+                                                9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7
+                                                24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9
+                                                21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4
+                                                21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4
+                                                24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10
+                                                23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1
+                                                21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8
+                                                11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1
+                                                9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7
+                                                7.7 12.6 7.7Z" fill=/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8 16C8 11.6 11.6 8 16 8C20.4 8 24 11.6 23.9 15.6C23.9 20 20.3 23.6 15.9 23.6C15.1 23.6 14.3 23.5 13.6 23.3C13.9 22.8 14.2 22.2 14.4 21.6C14.5 21.2 15 19.4 15 19.4C15.3 19.9 16.1 20.4 17 20.4C19.6 20.4 21.3 18 21.3 14.9C21.3 12.5 19.3 10.3 16.2 10.3C12.4 10.3 10.5 13 10.5 15.3C10.5 16.7 11 17.9 12.1 18.4C12.3 18.5 12.4 18.4 12.5 18.2C12.6 18.1 12.7 17.7 12.7 17.6C12.7707 17.4586 12.7414 17.4172 12.6828 17.3343C12.6586 17.3 12.6293 17.2586 12.6 17.2C12.3 16.8 12.1 16.3 12.1 15.6C12.1 13.6 13.6 11.8 16 11.8C18.1 11.8 19.3 13.1 19.3 14.9C19.3 17.3 18.3 19.2 16.8 19.2C15.9 19.2 15.3 18.5 15.5 17.7C15.5835 17.2826 15.7192 16.8477 15.8491 16.4318C16.0303 15.8514 16.2 15.3078 16.2 14.9C16.2 14.2 15.8 13.7 15.1 13.7C14.3 13.7 13.6 14.6 13.6 15.8C13.6 16.6 13.9 17.1 13.9 17.1C13.9 17.1 13.1 20.8 12.9 21.5C12.8 22.1 12.8 22.6999 12.8 23.2999C10 22.0999 8 19.3 8 16Z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="icons-list-item">
-                            <a href="">
-                                <svg height="23" width="23">
-                                    <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                </svg>
-                            </a>
+                        <li class="instructors_list-item splide__slide">
+                            <div>
+                                <div>
+                                <img
+                                    class="instructors_list-item-img"
+                                    src="images//instructor2.png"
+                                    alt="instructor2"
+                                />
+                                <div class="instructors_list-item-title">
+                                    SOFIA WELLS
+                                </div>
+                                <div class="instructors_list-item-description">
+                                    Sofia Wells focuses on Yin Yoga, bringing a calming
+                                    and restorative approach to her practice. With
+                                    extensive training in gentle, long-held postures,
+                                    Sofia helps students release deep-seated tension and
+                                    improve flexibility. Her nurturing guidance and
+                                    emphasis on mindfulness create a serene environment
+                                    for deep relaxation and healing.
+                                </div>
+                            </div>
+                            <ul class="instructors_list-item-socials">
+                                <li class="instructors_list-item-socials-item">
+                                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                        <svg
+                                            width="32"
+                                            height="32"
+                                            viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M18.6 16L14.4 13.6V18.4L18.6 16Z"
+                                            />
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.2 10.7C22.9 10.9 23.4 11.4 23.6 12.1C24 13.4 24 16 24 16C24 16 24 18.6 23.7 19.9C23.5 20.6 23 21.1 22.3 21.3C21 21.6 16 21.6 16 21.6C16 21.6 10.9 21.6 9.7 21.3C9 21.1 8.5 20.6 8.3 19.9C8 18.6 8 16 8 16C8 16 8 13.4 8.2 12.1C8.4 11.4 8.90001 10.9 9.60001 10.7C10.9 10.4 15.9 10.4 15.9 10.4C15.9 10.4 21 10.4 22.2 10.7Z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="instructors_list-item-socials-item">
+                                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <svg
+                                            width="32"
+                                            height="32"
+                                            viewBox="0 0 32 32"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                            />
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                                            />
+                                            <path fill-rule="evenodd"
+                                            clip-rule="evenodd" d="M0 16C0 7.16344
+                                            7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32
+                                            24.8366 24.8366 32 16 32C7.16344 32 0
+                                            24.8366 0 16ZM12.6 7.7H19.4C20.3 7.8 20.9
+                                            7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4
+                                            9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7
+                                            24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9
+                                            21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4
+                                            21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4
+                                            24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10
+                                            23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1
+                                            21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8
+                                            11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1
+                                            9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7
+                                            7.7 12.6 7.7Z" fill=/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="instructors_list-item-socials-item">
+                                    <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                                        <svg
+                                            width="32"
+                                            height="32"
+                                            viewBox="0 0 32 32"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8 16C8 11.6 11.6 8 16 8C20.4 8 24 11.6 23.9 15.6C23.9 20 20.3 23.6 15.9 23.6C15.1 23.6 14.3 23.5 13.6 23.3C13.9 22.8 14.2 22.2 14.4 21.6C14.5 21.2 15 19.4 15 19.4C15.3 19.9 16.1 20.4 17 20.4C19.6 20.4 21.3 18 21.3 14.9C21.3 12.5 19.3 10.3 16.2 10.3C12.4 10.3 10.5 13 10.5 15.3C10.5 16.7 11 17.9 12.1 18.4C12.3 18.5 12.4 18.4 12.5 18.2C12.6 18.1 12.7 17.7 12.7 17.6C12.7707 17.4586 12.7414 17.4172 12.6828 17.3343C12.6586 17.3 12.6293 17.2586 12.6 17.2C12.3 16.8 12.1 16.3 12.1 15.6C12.1 13.6 13.6 11.8 16 11.8C18.1 11.8 19.3 13.1 19.3 14.9C19.3 17.3 18.3 19.2 16.8 19.2C15.9 19.2 15.3 18.5 15.5 17.7C15.5835 17.2826 15.7192 16.8477 15.8491 16.4318C16.0303 15.8514 16.2 15.3078 16.2 14.9C16.2 14.2 15.8 13.7 15.1 13.7C14.3 13.7 13.6 14.6 13.6 15.8C13.6 16.6 13.9 17.1 13.9 17.1C13.9 17.1 13.1 20.8 12.9 21.5C12.8 22.1 12.8 22.6999 12.8 23.2999C10 22.0999 8 19.3 8 16Z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
                         </li>
-                        <li class="icons-list-item">
-                            <a href="">
-                                <svg height="11" width="27">
-                                    <use href="./images/icons/icon.svg#icon-burger-menu"></use>
-                                </svg>
-                            </a>
+                        <li class="instructors_list-item splide__slide">
+                            <div>
+                                <div>
+                                    <img
+                                        class="instructors_list-item-img"
+                                        src="images//instructor3.png"
+                                        alt="instructor3"
+                                    />
+                                    <div class="instructors_list-item-title">
+                                        Maya Collins
+                                    </div>
+                                    <div class="instructors_list-item-description">
+                                        Maya Collins is an expert in Bikram Yoga and Iyengar
+                                        Yoga. Her Bikram classes are held in a heated
+                                        environment to enhance detoxification and
+                                        flexibility, while her Iyengar sessions emphasize
+                                        precise alignment and the use of props to support
+                                        students’ practice. Maya’s comprehensive approach
+                                        ensures a well-rounded and effective yoga experience
+                                        for all levels.
+                                    </div>
+                                </div>
+                                <ul class="instructors_list-item-socials">
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M18.6 16L14.4 13.6V18.4L18.6 16Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.2 10.7C22.9 10.9 23.4 11.4 23.6 12.1C24 13.4 24 16 24 16C24 16 24 18.6 23.7 19.9C23.5 20.6 23 21.1 22.3 21.3C21 21.6 16 21.6 16 21.6C16 21.6 10.9 21.6 9.7 21.3C9 21.1 8.5 20.6 8.3 19.9C8 18.6 8 16 8 16C8 16 8 13.4 8.2 12.1C8.4 11.4 8.90001 10.9 9.60001 10.7C10.9 10.4 15.9 10.4 15.9 10.4C15.9 10.4 21 10.4 22.2 10.7Z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                                />
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                                                />
+                                                <path fill-rule="evenodd"
+                                                clip-rule="evenodd" d="M0 16C0 7.16344
+                                                7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32
+                                                24.8366 24.8366 32 16 32C7.16344 32 0
+                                                24.8366 0 16ZM12.6 7.7H19.4C20.3 7.8 20.9
+                                                7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4
+                                                9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7
+                                                24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9
+                                                21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4
+                                                21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4
+                                                24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10
+                                                23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1
+                                                21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8
+                                                11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1
+                                                9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7
+                                                7.7 12.6 7.7Z" fill=/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="instructors_list-item-socials-item">
+                                        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                                            <svg
+                                                width="32"
+                                                height="32"
+                                                viewBox="0 0 32 32"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8 16C8 11.6 11.6 8 16 8C20.4 8 24 11.6 23.9 15.6C23.9 20 20.3 23.6 15.9 23.6C15.1 23.6 14.3 23.5 13.6 23.3C13.9 22.8 14.2 22.2 14.4 21.6C14.5 21.2 15 19.4 15 19.4C15.3 19.9 16.1 20.4 17 20.4C19.6 20.4 21.3 18 21.3 14.9C21.3 12.5 19.3 10.3 16.2 10.3C12.4 10.3 10.5 13 10.5 15.3C10.5 16.7 11 17.9 12.1 18.4C12.3 18.5 12.4 18.4 12.5 18.2C12.6 18.1 12.7 17.7 12.7 17.6C12.7707 17.4586 12.7414 17.4172 12.6828 17.3343C12.6586 17.3 12.6293 17.2586 12.6 17.2C12.3 16.8 12.1 16.3 12.1 15.6C12.1 13.6 13.6 11.8 16 11.8C18.1 11.8 19.3 13.1 19.3 14.9C19.3 17.3 18.3 19.2 16.8 19.2C15.9 19.2 15.3 18.5 15.5 17.7C15.5835 17.2826 15.7192 16.8477 15.8491 16.4318C16.0303 15.8514 16.2 15.3078 16.2 14.9C16.2 14.2 15.8 13.7 15.1 13.7C14.3 13.7 13.6 14.6 13.6 15.8C13.6 16.6 13.9 17.1 13.9 17.1C13.9 17.1 13.1 20.8 12.9 21.5C12.8 22.1 12.8 22.6999 12.8 23.2999C10 22.0999 8 19.3 8 16Z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </header>
-
-        <section class="intro">
-            <div class="container">
-                <div class="intro-left-side">
-                    <div class="intro-info">
-                        <h1 class="intro-info-heading">Breath Natureal</h1>
-                        <p class="intro-info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, illum vel! Dolor natus provident veritatis soluta ea, accusantium quibusdam!</p>
-                        <ul class="intro-info-button-list">
-                            <li>
-                                <button class="info-button big">Explore</button>
-                            </li>
-                            <li>
-                                <button class="info-button small">    
-                                    <svg width="56" height="56">
-                                        <use href="./images/icons/icon.svg#icon-play"></use>
-                                    </svg>
-                                    Live Demo...
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card intro-review-card">
-                        <div class="review-card-top">
-                            <img src="./images/avatars-images/woman_blue_back.jpg" alt="avatar" class="review-card-avatar avatar-image">
-                            <div class="review-card-avatar-info avatar-info">
-                                <span class="avatar-info-name">Alena Patel</span>
-                                <svg width="91" height="13">
-                                    <use href="./images/icons/icon.svg#icon-stars"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="figcaption">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="intro-right-side">
-                    <!-- <div class="card plant-card">
-                        <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                        <div class="figcaption">
-                            <div class="left-side">    
-                                <p class="intro-plant-card-text">Trendy House Plant</p>
-                                <h3 class="intro-plant-card-heading">Calathea plant</h3>
-                                <button class="intro-plant-card-button">Buy Now</button>
-                            </div>
-                            <div class="right-side">
-                                <button class="intro-plant-cards-slider-button">
-                                    <svg width="40" height="40">
-                                        <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide card plant-card">
-                                <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                                <div class="figcaption">
-                                    <div class="left-side">    
-                                        <p class="intro-plant-card-text">Trendy House Plant</p>
-                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
-                                        <button class="intro-plant-card-button">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card plant-card">
-                                <img src="./images/plants-images/Plant-two.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                                <div class="figcaption">
-                                    <div class="left-side">    
-                                        <p class="intro-plant-card-text">Trendy House Plant</p>
-                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
-                                        <button class="intro-plant-card-button">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card plant-card">
-                                <img src="./images/plants-images/Plant-three.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                                <div class="figcaption">
-                                    <div class="left-side">    
-                                        <p class="intro-plant-card-text">Trendy House Plant</p>
-                                        <h3 class="intro-plant-card-heading">Calathea plant</h3>
-                                        <button class="intro-plant-card-button">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-pagination"></div>
-                      
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      </div>
-                </div>
-            </div>
-        </section>    
-
-        <section class="trendy-section" id="trendy">
-            <div class="container">
-                <div class="heading">
-                    <svg height="60" width="60" class="heading-left-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
-                    </svg>
-                    
-                    <h2 class="section-heading">Our Trendy plants</h2>
-
-                    <svg height="60" width="60" class="heading-right-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
-                    </svg>
-                </div>
-
-                <div class="trendy-plants">
-                    <div class="card plant-card">
-                        <img src="./images/plants-images/Plant-two.png" alt="Calathea plant" width="529" height="644" class="plant-image">
-                        <div class="figcaption">    
-                            <h3 class="plant-card-heading">For Small Decs Ai Plat</h3>
-                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <p class="plant-card-cost">Rs. 599/-</p>
-                            <div class="button-list">
-                                <button class="plant-card-button">Explore</button>
-                                <button class="plant-card-save-button">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card plant-card">
-                        <img src="./images/plants-images/Plant-seven.png" alt="Calathea plant" width="644" height="644" class="plant-image">
-                        <div class="figcaption">    
-                            <h3 class="plant-card-heading">For Fresh Decs Ai Plat</h3>
-                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <p class="plant-card-cost">Rs. 599/-</p>
-                            <div class="button-list">
-                                <button class="plant-card-button">Explore</button>
-                                <button class="plant-card-save-button">
-                                    <svg width="30" height="30">
-                                        <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
-    </div>
-    
-    <main class="content">
-        <section class="top-selling-section" id="top">
-            <div class="container">
-                
-                <div class="heading">
-                    <svg height="60" width="60" class="heading-left-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
-                    </svg>
-                    
-                    <h2 class="section-heading">Our Top Selling</h2>
-
-                    <svg height="60" width="60" class="heading-right-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
-                    </svg>
+        <section class="touch" id="touch" data-aos="zoom-in-up">
+            <h2 class="touch_title">
+                STAY IN TOUCH WITH <span class="main_color">THE LOTUS</span>
+            </h2>
+            <form class="touch_form">
+                <div>
+                    <label class="touch_form-label" for="email"
+                        >Your email</label
+                    >
+                    <input class="touch_form-input" name="email" type="text" />
                 </div>
-
-                <ul class="top-selling-list">
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-two.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-three.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-four.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-five.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="card plant-card">
-                            <img src="./images/plants-images/Plant-six.png" alt="Calathea plant" width="404" height="404" class="plant-card-image">
-                            <div class="figcaption">
-                                <div class="left-side">    
-                                    <h3 class="plant-card-heading">Calathea plant</h3>
-                                    <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    <div class="plant-card-lower">
-                                        <p class="plant-card-cost">Rs. 359/-</p>
-                                        <button class="plant-card-save-button">
-                                            <svg width="27" height="27">
-                                                <use href="./images/icons/icon.svg#icon-shopping-bag"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <button type="submit" class="book touch_form-button">Subscribe</button>
+            </form>
         </section>
-
-        <section class="review-section">
-            <div class="container">
-                <div class="heading">
-                    <svg height="60" width="60" class="heading-left-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
-                    </svg>
-                    
-                    <h2 class="section-heading">Customer Review</h2>
-
-                    <svg height="60" width="60" class="heading-right-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
-                    </svg>
+        <footer class="footer" data-aos="zoom-in-up">
+            <div class="footer_wrapper">
+                <div>
+                    <a href="/"
+                        ><img src="images/svg/logoXL.svg" alt="logo"
+                    /></a>
                 </div>
-
-                <ul class="review-cards-list">
-                    <li>
-                        <figure class="card review-card">
-                            <div class="review-card-top">
-                                <img src="./images/avatars-images/man_with_glasses.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
-                                <div class="review-card-avatar-info avatar-info">
-                                    <span class="avatar-info-name">Maxn Raval</span>
-                                    <svg width="115" height="16">
-                                        <use href="./images/icons/icon.svg#icon-stars"></use>
-                                    </svg>
-                                </div>
+                <div class="footer_wrapper-col">
+                    <div class="footer_wrapper-col-title">PAY US A VISIT</div>
+                    <ul class="footer_wrapper-col-list">
+                        <li class="footer_wrapper-col-list-item">
+                            <div class="pay">
+                                <img
+                                    src="images/svg/location.svg"
+                                    alt="location"
+                                />
                             </div>
-                            <figcaption class="figcaption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class="card review-card">
-                            <div class="review-card-top">
-                                <img src="./images/avatars-images/woman_water_back.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
-                                <div class="review-card-avatar-info avatar-info">
-                                    <span class="avatar-info-name">venely k</span>
-                                    <svg width="115" height="16">
-                                        <use href="./images/icons/icon.svg#icon-stars"></use>
-                                    </svg>
-                                </div>
+                            <a href="https://maps.google.com/?q=432 Evergreen Terrace Springfield, IL 62704" target="_blank">
+                                432 Evergreen Terrace Springfield, IL 62704
+                            </a>
+                        </li>
+                        <li class="footer_wrapper-col-list-item">
+                            <div class="pay">
+                                <img
+                                    src="images/svg/phone2.svg"
+                                    alt="number"
+                                />
                             </div>
-                            <figcaption class="figcaption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class="card review-card">
-                            <div class="review-card-top">
-                                <img src="./images/avatars-images/man_with_hat.jpg" alt="avatar" class="review-card-avatar avatar-image" width="77" height="77">
-                                <div class="review-card-avatar-info avatar-info">
-                                    <span class="avatar-info-name">Lii thakur</span>
-                                    <svg width="115" height="16">
-                                        <use href="./images/icons/icon.svg#icon-stars"></use>
-                                    </svg>
-                                </div>
+                            <a href="tel:3125557890">(312) 555-7890</a>
+                        </li>
+                        <li class="footer_wrapper-col-list-item">
+                            <div class="pay">
+                                <img
+                                    src="images/svg/mail.svg"
+                                    alt="email"
+                                />
                             </div>
-                            <figcaption class="figcaption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-
-
-            </div>
-        </section>
-
-        <section class="best-section" id="oxygen">
-            <div class="container">
-                <div class="heading">
-                    <svg height="60" width="60" class="heading-left-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-left"></use>
-                    </svg>
-                    
-                    <h2 class="section-heading">Our Best o2</h2>
-
-                    <svg height="60" width="60" class="heading-right-icon">
-                        <use href="./images/icons/icon.svg#icon-heading-right"></use>
-                    </svg>
-                </div>
-
-                <div class="best-section-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide card plant-card">
-                            <img src="./images/plants-images/Plant-one.png" alt="Calathea plant" width="771" height="771" class="best-plant-image">
-                            <div class="figcaption">    
-                                <h3 class="plant-card-heading">We Have Small And Best O2 Plants Collection’s</h3>
-
-                                <div class="swiper-text">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                    </div>
-                        
-                                    
-                                    <div class="button-list">
-                                        <button class="plant-card-button">Explore</button>
-                                        <div class="plant-card-pages">
-                                            <button class="intro-plant-text-slider-button swiper-button-text-prev">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                            
-                                            <div class="swiper-fraction-pagination"></div>
-                        
-                                            <button class="intro-plant-text-slider-button swiper-button-text-next">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card plant-card">
-                            <img src="./images/plants-images/Plant-four.png" alt="Calathea plant" width="921" height="921" class="best-plant-image">
-                            <div class="figcaption">    
-                                <h3 class="plant-card-heading">We Have Small And Best O2 Plants Collection’s</h3>
-
-                                <div class="swiper-text">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                    </div>
-                        
-                                    
-                                    <div class="button-list">
-                                        <button class="plant-card-button">Explore</button>
-                                        <div class="plant-card-pages">
-                                            <button class="intro-plant-text-slider-button swiper-button-text-prev">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                            
-                                            <div class="swiper-fraction-pagination"></div>
-                        
-                                            <button class="intro-plant-text-slider-button swiper-button-text-next">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide card plant-card">
-                            <img src="./images/plants-images/Plant-seven.png" alt="Calathea plant" width="771" height="771" class="best-plant-image">
-                            <div class="figcaption">    
-                                <h3 class="plant-card-heading">We Have Small And Best O2 Plants Collection’s</h3>
-
-                                <div class="swiper-text">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                        
-                                        <div class="swiper-slide">
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            <p class="plant-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                        </div>
-                                    </div>
-                        
-                                    
-                                    <div class="button-list">
-                                        <button class="plant-card-button">Explore</button>
-                                        <div class="plant-card-pages">
-                                            <button class="intro-plant-text-slider-button swiper-button-text-prev">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                            
-                                            <div class="swiper-fraction-pagination"></div>
-                        
-                                            <button class="intro-plant-text-slider-button swiper-button-text-next">
-                                                <svg width="44" height="44">
-                                                    <use href="./images/icons/icon.svg#icon-right-arrow"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="best-section-swiper-pagination"></div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-left-side">
-                    <span class="footer-logo">
-                        <span class="footer-logo-icon"><img src="./images/planto.png" alt="logo" width="82" height="82"></span>
-                        <span class="footer-logo-text">Planto.</span>
-                    </span>
-    
-                    <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-        
-                <div class="footer-center">
-                    <h3 class="footer-heading-text">Quick Link’s</h3>
-    
-                    <ul class="footer-links-list">
-                        <li class="footer-link"><a href="">Home</a></li>
-                        <li class="footer-link"><a href="">Type’s Of plant’s</a></li>
-                        <li class="footer-link"><a href="">Contact</a></li>
-                        <li class="footer-link"><a href="">Privacy</a></li>
+                            <a href="mailto:contact@lotusglow.com"
+                                >Contact@lotusglow.com</a
+                            >
+                        </li>
                     </ul>
                 </div>
-        
-                <div class="footer-right-side">
-                    <h3 class="footer-heading-text">For Every Update.</h3>
-    
-                    <form class="email-update-form">
-                        <label class="email-update-label" for="to">
-                            <span class="is-hidden">Email</span>
-                            <input name="to" type="email" placeholder="Enter email" class="email-update-input" required>
-                            <button type="submit" class="email-submit-button">Subscribe</button>
-                        </label>
-                    </form>
+                <div class="footer_wrapper-col">
+                    <div class="footer_wrapper-col-title">LOTUS GLOW</div>
+                    <ul class="footer_wrapper-col-list">
+                        <li class="footer_wrapper-col-list-item">
+                            <a href="#club">About Us</a>
+                        </li>
+                        <li class="footer_wrapper-col-list-item">
+                            <a href="#types">Lotus Types</a>
+                        </li>
+                        <li class="footer_wrapper-col-list-item">
+                            <a href="#instructors">Instructors</a>
+                        </li>
+                        <li class="footer_wrapper-col-list-item">
+                            <a href="#touch">Join The Club</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_wrapper-col">
+                    <div class="footer_wrapper-col-title">
+                        FIND YOUR INNER LIGHT
+                    </div>
+                    <ul class="footer_wrapper-col-socials">
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM16 8C20.4 8 24 11.6 24 16C24 20 21.1 23.4 17.1 24V18.3H19L19.4 16H17.2V14.5C17.2 13.9 17.5 13.3 18.5 13.3H19.5V11.3C19.5 11.3 18.6 11.1 17.7 11.1C15.9 11.1 14.7 12.2 14.7 14.2V16H12.7V18.3H14.7V23.9C10.9 23.3 8 20 8 16C8 11.6 11.6 8 16 8Z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="35"
+                                    height="35"
+                                    viewBox="0 0 35 35"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M17.5 34C26.6127 34 34 26.6127 34 17.5C34 8.3873 26.6127 1 17.5 1C8.3873 1 1 8.3873 1 17.5C1 26.6127 8.3873 34 17.5 34Z"
+                                        stroke="#191614"
+                                        stroke-miterlimit="10"
+                                    />
+                                    <path
+                                        d="M7.33596 7.94043L15.2228 18.4856L7.28625 27.0594H9.07259L16.0211 19.5528L21.6352 27.0594H27.7137L19.383 15.9212L26.7703 7.94043H24.984L18.5849 14.8537L13.4145 7.94043H7.33596ZM9.96284 9.2561H12.7553L25.0865 25.7438H22.294L9.96284 9.2561Z"
+                                        fill="#191614"
+                                    /></svg
+                            ></a>
+                        </li>
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8.2 13.3V24H11.6V13.3H8.2ZM8 9.9C8 11 8.8 11.8 9.9 11.8C11 11.8 11.8 11 11.8 9.9C11.8 8.8 11 8 9.9 8C8.9 8 8 8.8 8 9.9ZM20.6 24H23.8V17.4C23.8 14.1 21.8 13 19.9 13C18.2 13 17 14.1 16.7 14.8V13.3H13.5V24H16.9V18.3C16.9 16.8 17.9 16 18.9 16C19.9 16 20.6 16.5 20.6 18.2V24Z"
+                                    /></svg
+                            ></a>
+                        </li>
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M18.6 16L14.4 13.6V18.4L18.6
+                                    16Z""/>
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM22.2 10.7C22.9 10.9 23.4 11.4 23.6 12.1C24 13.4 24 16 24 16C24 16 24 18.6 23.7 19.9C23.5 20.6 23 21.1 22.3 21.3C21 21.6 16 21.6 16 21.6C16 21.6 10.9 21.6 9.7 21.3C9 21.1 8.5 20.6 8.3 19.9C8 18.6 8 16 8 16C8 16 8 13.4 8.2 12.1C8.4 11.4 8.90001 10.9 9.60001 10.7C10.9 10.4 15.9 10.4 15.9 10.4C15.9 10.4 21 10.4 22.2 10.7Z"
+                                    /></svg
+                            ></a>
+                        </li>
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM12.6 7.7H19.4C20.3 7.8 20.9 7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4 9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7 24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9 21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4 21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4 24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10 23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1 21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8 11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1 9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7 7.7 12.6 7.7Z"
+                                    /></svg
+                            ></a>
+                        </li>
+                        <li class="footer_wrapper-col-socials-item">
+                            <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16ZM8 16C8 11.6 11.6 8 16 8C20.4 8 24 11.6 23.9 15.6C23.9 20 20.3 23.6 15.9 23.6C15.1 23.6 14.3 23.5 13.6 23.3C13.9 22.8 14.2 22.2 14.4 21.6C14.5 21.2 15 19.4 15 19.4C15.3 19.9 16.1 20.4 17 20.4C19.6 20.4 21.3 18 21.3 14.9C21.3 12.5 19.3 10.3 16.2 10.3C12.4 10.3 10.5 13 10.5 15.3C10.5 16.7 11 17.9 12.1 18.4C12.3 18.5 12.4 18.4 12.5 18.2C12.6 18.1 12.7 17.7 12.7 17.6C12.7707 17.4586 12.7414 17.4172 12.6828 17.3343C12.6586 17.3 12.6293 17.2586 12.6 17.2C12.3 16.8 12.1 16.3 12.1 15.6C12.1 13.6 13.6 11.8 16 11.8C18.1 11.8 19.3 13.1 19.3 14.9C19.3 17.3 18.3 19.2 16.8 19.2C15.9 19.2 15.3 18.5 15.5 17.7C15.5835 17.2826 15.7192 16.8477 15.8491 16.4318C16.0303 15.8514 16.2 15.3078 16.2 14.9C16.2 14.2 15.8 13.7 15.1 13.7C14.3 13.7 13.6 14.6 13.6 15.8C13.6 16.6 13.9 17.1 13.9 17.1C13.9 17.1 13.1 20.8 12.9 21.5C12.8 22.1 12.8 22.6999 12.8 23.2999C10 22.0999 8 19.3 8 16Z"
+                                    /></svg
+                            ></a>
+                        </li>
+                    </ul>
+                    <button class="book open-modal">
+                        <div>book a session</div>
+                        <img
+                            src="images/svg/arrow-right(black).svg"
+                            alt=""
+                        />
+                    </button>
                 </div>
             </div>
+            <hr class="hr" />
+            <div class="footer_rights">
+                LOTUS GLOW YOGA CLUB © ALL RIGHTS RESERVED 2024
+            </div>
+        </footer>
 
-            <div class="footer-lower">
-                <ul class="footer-social-list">
-                    <li class="footer-social-link"><a href="https://www.facebook.com/?locale=uk_UA">FB</a></li>
-                    <li class="footer-social-link"><a href="https://x.com/?lang=uk">TW</a></li>
-                    <li class="footer-social-link"><a href="https://ua.linkedin.com/">LI</a></li>
-                </ul>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal_close">
+                    <svg
+                        width="51"
+                        height="51"
+                        viewBox="0 0 51 51"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M39.6917 11.3182L10.6748 40.3337M10.6748 11.3182L39.6917 40.3337"
+                            stroke="#C7A78A"
+                            stroke-width="2.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </div>
+                <div class="modal_header">
+                    <div class="modal_header-subtitle">JOIN THE LOTUS GLOW</div>
+                    <h2 class="modal_header-title">
+                        <span class="main_color">BOOK </span>A SESSION
+                    </h2>
+                </div>
 
-                <span class="footer-rights">planto © all right reserve</span>
+                <form id="contactForm">
+                    <div class="grid-container">
+                        <div class="modal_input-wrapper input1">
+                            <label class="modal-label" for="name"
+                                >FULL NAME</label
+                            >
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your name..."
+                                class="input"
+                            />
+                            <p class="required">*</p>
+                        </div>
+                        <div class="modal_input-wrapper">
+                            <label class="modal-label" for="email"
+                                >EMAIL ADRESS</label
+                            >
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email..."
+                                class="input"
+                            />
+                            <p class="required">*</p>
+                        </div>
+                        <div class="modal_input-wrapper">
+                            <label class="modal-label" for="email"
+                                >PHONE NUMBER</label
+                            >
+                            <input
+                                type="text"
+                                name="number"
+                                placeholder="Phone number..."
+                                class="input"
+                            />
+                        </div>
+                        <div class="modal_input-wrapper input4">
+                            <label class="modal-label" for="type"
+                                >PREFFERRED SESSION TYPE</label
+                            >
+                            <select name="type" class="input round">
+                                <option value=""></option>
+                                <option value="Kundalini Yoga">
+                                    Kundalini Yoga
+                                </option>
+                                <option value="Yin Yoga">Yin Yoga</option>
+                                <option value="Bikram Yoga">Bikram Yoga</option>
+                                <option value="Iyengar Yoga">
+                                    Iyengar Yoga
+                                </option>
+                            </select>
+                            <img
+                                src="images/svg/select.svg"
+                                alt="select"
+                            />
+                        </div>
+                        <div class="modal_input-wrapper">
+                            <label class="modal-label" for="date"
+                                >PREFERRED DATE</label
+                            >
+                            <input
+                                type="date"
+                                name="dane"
+                                placeholder="**/**/****"
+                                class="input"
+                            />
+                            <img
+                                src="images/svg/calendar-edit.svg"
+                                alt="select"
+                            />
+                        </div>
+                        <div class="modal_input-wrapper">
+                            <label class="modal-label" for="time"
+                                >PREFERRED TIME</label
+                            >
+                            <input
+                                type="time"
+                                placeholder="**:**"
+                                class="input"
+                            />
+                            <img
+                                src="images/svg/calendar-clock.svg"
+                                alt="select"
+                            />
+                        </div>
+                        <button class="book form_button" type="submit">
+                            <div>Book a Session</div>
+                            <img
+                                src="images/svg/arrow-right(white).svg"
+                                alt="arrow-right"
+                            />
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./js/emailSending.js"></script>
-</body>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+        <script src="js/splide-slider.js"></script>
+        <script src="js/burger-menu.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/subscribe_form.js"></script>
+    </body>
 </html>

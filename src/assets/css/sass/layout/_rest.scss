@@ -1,0 +1,87 @@
+* {
+    font-family: "SUSE", sans-serif;
+}
+
+body {
+    background-color: var(--basic-bgc);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--text);
+    font-family: "Archivo Black", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+    transition: all 250ms;
+
+    &:hover {
+        transition: all 250ms;
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    font-size: 53px;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid var(--main);
+}
+
+.wide {
+    letter-spacing: 0.6em;
+    font-weight: bold;
+}
+
+.simple {
+    color: var(--text);
+}
+
+.main_color {
+    font-family: "Archivo Black", sans-serif;
+    color: var(--main);
+}
+
+.book {
+    padding: 25px 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 60px;
+    background-color: var(--main);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.33em;
+    font-size: 14px;
+    transition: background 250ms;
+
+    &:hover {
+        background: var(--hover);
+        transition: background 250ms;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pay {
+    padding: 5px 12px 5px 10px;
+    background: var(--main);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tel-mobile {
+    &:hover {
+        filter: contrast(1.3);
+    }
+}

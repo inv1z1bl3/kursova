@@ -1,0 +1,296 @@
+@media (max-width: 1440px) {
+    .touch {
+        &_form {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main {
+        &_col {
+            &-title {
+                font-size: 60px;
+            }
+        }
+    }
+    .club {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .touch {
+        &_form {
+            &-input {
+                width: 320px;
+            }
+        }
+    }
+    .footer {
+        &_wrapper {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+    .types {
+        &_grid {
+            gap: 20px;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-areas:
+                "card1 card2"
+                "img1 img1"
+                "card3 card4"
+                "img2 img2";
+
+            &-card {
+                grid-column: span 1;
+            }
+            &-img {
+                grid-column: span 2;
+            }
+
+            &-card:nth-child(1) {
+                grid-area: card1;
+            }
+            &-card:nth-child(2) {
+                grid-area: card2;
+            }
+            &-card:nth-child(3) {
+                grid-area: card3;
+            }
+            &-card:nth-child(4) {
+                grid-area: card4;
+            }
+            &-img:nth-child(1) {
+                grid-area: img2;
+            }
+            &-img:nth-child(2) {
+                grid-area: img1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        padding: 100px 40px;
+
+        &_wrapper {
+            justify-content: center;
+        }
+        & h1 {
+            text-align: center;
+        }
+        &_col {
+            margin-right: 0px;
+            justify-content: center;
+            align-items: center;
+            &-img {
+                display: none;
+            }
+            &-phone {
+                display: none;
+            }
+
+            &-wide {
+                text-align: center;
+                margin-top: 130px;
+            }
+
+            &-subtitle {
+                text-align: center;
+            }
+        }
+
+        &_button-phone-mobile {
+            display: block;
+        }
+    }
+    .types_header {
+        justify-content: center;
+    }
+
+    .types_header-title {
+        text-align: center;
+    }
+
+    .types_hr {
+        display: none;
+    }
+
+    .instructors_hr {
+        display: none;
+    }
+    .types_grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 36px 40px;
+    }
+
+    .types_grid-img {
+        grid-column: span 4;
+    }
+
+    .types_grid-card {
+        grid-column: span 4;
+    }
+
+    .touch {
+        padding: 100px 30px;
+
+        margin: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: calc(100% - 120px);
+    }
+
+    .club {
+        padding: 60px 40px;
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .types {
+        padding: 50px 0px;
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .harmony {
+        margin: 70px 30px;
+        padding: 100px 40px;
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .instructors {
+        padding: 0px 40px;
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .touch {
+        padding: 100px 30px;
+        & h2 {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 140px;
+        &_logo {
+            & img {
+                height: 127px;
+                width: 117px;
+            }
+        }
+    }
+    .main {
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    .club {
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    .types {
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    .harmony {
+        & h2 {
+            font-size: 32px;
+        }
+    }
+
+    .instructors {
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    .touch {
+        & h2 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    .main {
+        & h1 {
+            font-size: 40px;
+        }
+        .book {
+            padding: 25px 19px;
+            max-width: 250px !important;
+        }
+        &_col {
+            &-wide {
+                font-size: 12px;
+            }
+
+            &-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        .footer_wrapper-col-title {
+            text-align: center;
+        }
+    }
+
+    .burger_menu {
+        padding: 70px 40px 200px 40px !important;
+
+        & li {
+            & hr {
+                margin-top: 20px !important;
+            }
+        }
+        & a {
+            font-size: 22px !important;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .club {
+        &_img {
+            width: 300px;
+        }
+    }
+
+    // .touch {
+    //     background-position: center;
+    // }
+
+    .footer {
+        &_rights {
+            font-size: 10px;
+            letter-spacing: 0.33em;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.types {
+    padding: 65px 60px;
+
+    &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title {
+            max-width: 562px;
+        }
+    }
+
+    &_grid {
+        margin-top: 65px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+
+            position: relative;
+            padding: 40px 27px;
+            border-radius: 10px;
+            background: var(--block);
+            grid-column: span 3;
+            &-title {
+                font-size: 26px;
+                color: var(--main);
+                font-weight: bold;
+            }
+
+            &-subtitle {
+                text-transform: uppercase;
+                margin: 12px 0;
+                margin-top: 35px;
+                font-size: 14px;
+                letter-spacing: 0.33em;
+                font-weight: bold;
+                color: #4b453e;
+            }
+
+            &-description {
+                line-height: 25px;
+                font-size: 18px;
+                color: var(--text);
+                margin-bottom: 50px;
+            }
+
+            &-link {
+                margin-top: auto;
+                display: flex;
+                gap: 22px;
+                & a {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 18px;
+                    letter-spacing: 0.33em;
+                    color: var(--main);
+                }
+            }
+        }
+
+        &-img {
+            object-fit: cover;
+            grid-column: span 6;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    &_hr {
+        width: 55%;
+        border: 1px solid var(--main);
+        padding: 0px 30px;
+    }
+}
+
+.mark {
+    width: 33px;
+    height: 61px;
+    background: var(--main);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

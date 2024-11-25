@@ -1,0 +1,58 @@
+.footer {
+    padding: 0px 60px;
+    &_wrapper {
+        padding: 30px 60px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &-col {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            &-title {
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: var(--text);
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                &-item {
+                    font-size: 14px;
+                    display: flex;
+                    gap: 13px;
+                }
+            }
+
+            &-socials {
+                display: flex;
+                gap: 20px;
+
+                &-item a svg {
+                    cursor: pointer;
+                    fill: var(--main);
+                    transition: fill 0.3s;
+                }
+
+                &-item a svg:hover {
+                    fill: var(--hover);
+                }
+            }
+        }
+    }
+
+    &_rights {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.33em;
+        color: var(--main);
+        margin-bottom: 40px;
+    }
+}
