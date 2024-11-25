@@ -1,5 +1,5 @@
 {
-  "name": "serediuk-denys-planto-website",
+  "name": "vasyliev-andrii-website",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "Serediuk-Denys-Planto-WebSite"
+    "url": "vasyliev-andrii-website"
   },
-  "author": "d3_nik",
+  "author": "inv1z1bl3",
   "license": "ISC",
   "description": "",
   "devDependencies": {
