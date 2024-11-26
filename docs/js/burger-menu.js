@@ -1,4 +1,8 @@
+const menu = document.getElementById("burgerMenu");
 function toggleMenu() {
-    const menu = document.getElementById("burgerMenu");
-    menu.classList.toggle("open");
+    menu.classList.add("open");
+}
+
+function closeModal() {
+    menu.classList.remove('open');
 }

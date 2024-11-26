@@ -16,6 +16,7 @@
                 font-size: 20px;
                 text-transform: uppercase;
                 color: var(--text);
+                text-align: center;
             }
 
             &-list {
@@ -43,6 +44,13 @@
                     fill: var(--hover);
                 }
             }
+           &:nth-child(3) {
+            .footer_wrapper-col-list {
+                    .footer_wrapper-col-list-item {
+                        justify-content: center;
+                    }
+                }
+           } 
         }
     }
 
